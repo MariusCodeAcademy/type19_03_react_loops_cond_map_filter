@@ -1,3 +1,4 @@
+import CountersList from './components/counters/CountersList';
 import OneLi from './components/counters/OneLi';
 import './style/App.css';
 
@@ -25,17 +26,7 @@ export default function App() {
 
       <ul className='list-group my-5'>{listElements}</ul>
 
-      {/* <CountersList list={} /> */}
-      <section className='row bg-info'>
-        {countersDataArr.map((cObj) => (
-          <div
-            key={cObj.id}
-            className={`col-3 text-center text-white p-4 ${cObj.color || ''}`}>
-            <p className='lead fs-1 '>{cObj.value}</p>
-            <h3 className='fs3'>{cObj.title}</h3>
-          </div>
-        ))}
-      </section>
+      <CountersList list={countersDataArr} />
     </div>
   );
 }
