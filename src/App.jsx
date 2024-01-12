@@ -1,5 +1,6 @@
 import CountersList from './components/counters/CountersList';
 import OneLi from './components/counters/OneLi';
+import ImageSections from './components/imageSecion/ImageSections';
 import './style/App.css';
 
 export default function App() {
@@ -27,6 +28,8 @@ export default function App() {
       <ul className='list-group my-5'>{listElements}</ul>
 
       <CountersList list={countersDataArr} />
+
+      <ImageSections />
     </div>
   );
 }
