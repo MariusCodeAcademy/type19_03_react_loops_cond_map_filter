@@ -25,6 +25,7 @@ export default function App() {
 
       <ul className='list-group my-5'>{listElements}</ul>
 
+      {/* <CountersList list={} /> */}
       <section className='row bg-info'>
         {countersDataArr.map((cObj) => (
           <div
