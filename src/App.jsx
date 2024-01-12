@@ -23,7 +23,7 @@ export default function App() {
   // console.log('listElements ===', listElements);
   return (
     <div className='container'>
-      <h1 className='display-2 mt-3'>I am the Vytas App</h1>
+      <h1 className='display-2 mt-3'>All good Friday</h1>
 
       <ul className='list-group my-5'>{listElements}</ul>
 
