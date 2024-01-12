@@ -1,9 +1,5 @@
+import OneLi from './components/counters/OneLi';
 import './style/App.css';
-
-function OneLi(props) {
-  console.log('props ===', props);
-  return <li className='list-group-item'>One LI</li>;
-}
 
 export default function App() {
   const countersDataArr = [
@@ -14,12 +10,12 @@ export default function App() {
   ];
 
   const listElements = countersDataArr
-    .filter((cObj) => cObj.value > 200)
+    .filter((cObj) => cObj.value > 100)
     .map((cObj) => (
-      <li key={cObj.id} className='list-group-item'>
-        {cObj.title}
-      </li>
-      // <OneLi key={cObj.id} />
+      // <li key={cObj.id} className='list-group-item'>
+      //   {cObj.title}
+      // </li>
+      <OneLi key={cObj.id} title={cObj.title} value={cObj.value} />
     ));
 
   // console.log('listElements ===', listElements);
